@@ -1,6 +1,41 @@
-# akn-element-context
+# Akn-Element-Context
 
-> Provides the context of a provided Akoma Ntoso XML element name in terms of allowed elements, attributes and allowed parents
+This library will be useful to you if you are a tool developer around Akoma Ntoso XML documents. Ever wanted to query the context of an element? Know its possible attributes, and its possible child elements? This will do just that. This is a very fast implementation that is pure native JS, and does not make use of *any* XPath or XML Schema introspection. 
+
+## API
+
+`findElements`
+
+This returns possible element names for a partial set of starting characters. 
+
+For example:
+
+```
+import {findElements} from 'akn-element-context';
+...
+const elementsStartingWithP = findElements("p");
+```
+
+
+`elementContext`
+
+Returns the element context information for an element
+
+For example: 
+
+```
+import {elementContext} from 'akn-element-context';
+...
+const elemPart = elementContext("part");
+```
+
+Returns the following: 
+
+```
+{
+  
+}
+
 
 [![NPM](https://img.shields.io/npm/v/akn-element-context.svg)](https://www.npmjs.com/package/akn-element-context) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
