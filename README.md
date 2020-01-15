@@ -14,6 +14,11 @@ You can essentially build a complete document tree or an element tree within a d
 
 Usable both in-browser (tested on ReactJS and SvelteJS) and on the server side with NodeJS. 
 
+## Install
+
+```
+npm install --save bungenix-akn-context
+```
 
 ## API
 
